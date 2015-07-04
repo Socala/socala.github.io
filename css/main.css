@@ -34,6 +34,10 @@
   background-color: transparent;
 }
 
+.navbar-toggle {
+  border: none;
+}
+
 html,body {
   height:100%;
   background-color: #ffffff;
