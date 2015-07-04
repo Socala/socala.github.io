@@ -1,0 +1,94 @@
+@keyframes rotateThis {
+  from{
+    -moz-transform: rotate(0deg);
+  }       
+  to{
+    -moz-transform: rotate(90deg);
+  }                       
+}
+
+@-webkit-keyframes wkrotateThis {
+  from{
+    -webkit-transform:rotate(0deg);
+  }       
+  to{
+    -webkit-transform:rotate(90deg);
+  }                       
+}
+
+.rotation {
+  -moz-animation-name: rotate;
+  -moz-animation-duration":"0.8s",
+  -moz-animation-iteration-count":"1",
+  -moz-animation-fill-mode":"forwards",
+
+  -webkit-animation-name: rotate;
+  -webkit-animation-duration":"0.8s",
+  -webkit-animation-iteration-count":"1",
+  -webkit-animation-fill-mode" : "forwards",
+}
+
+
+.navbar {
+  background: rgba(153, 0, 0, 0);
+  border-bottom: 0;
+}
+
+html,body {
+  height:100%;
+  background-color: #e3e3e3;
+}
+
+.special {
+  height:110%;
+  margin-top: -50px;
+  top: 0;
+}
+
+.jumbotron {
+  background-image: url("../img/background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.maintitle {
+  margin-top: 250px;
+  color: white;
+}
+
+h1, h2 {
+  font-family: 'Crimson Text', serif;
+}
+
+.glyphicon-menu-hamburger {
+  font-size: 2.2em;
+  color: white;
+  margin-top: 22px;
+}
+
+#brandimg {
+  width: 30%;
+  margin-top: 25px;
+  display: inline;
+  margin-left: 20px;
+}
+
+#logoimg {
+  width: 10%;
+  margin-top: 25px; 
+  display: inline;
+}
+
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 50px;
+    height: 50px;
+    padding-top: 0;
+}
+
+.btn-lg {
+  background: transparent;
+  color: white;
+  text-shadow: none;
+}
