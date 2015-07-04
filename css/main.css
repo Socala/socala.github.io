@@ -27,7 +27,6 @@
   color: white;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 100;
 }
 
 .nav > li > a:hover,
@@ -37,7 +36,15 @@
 
 html,body {
   height:100%;
-  background-color: #e3e3e3;
+  background-color: #ffffff;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.mission {
+  font-size: 1.5em;
 }
 
 .special {
@@ -58,8 +65,16 @@ html,body {
   color: white;
 }
 
+.center {
+  text-align: center;
+}
+
 h1, h2 {
   font-family: 'Crimson Text', serif;
+}
+
+h4 {
+  font-style: italic;
 }
 
 .glyphicon-menu-hamburger {
