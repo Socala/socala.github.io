@@ -22,29 +22,27 @@ $(document).ready(function() {
     var newScrollTop = $(window).scrollTop();
     if ($(window).scrollTop() < (topOfHeader + heightOfHeader - 68) && down == 0) {
       //scroll down to secondary header
-      //newScrollTop = topOfHeader + heightOfHeader - 67;
-      //alert('hi');
       $root.animate({scrollTop: topOfHeader + heightOfHeader - 67}, 1000);
     } else if ($(window).scrollTop() < (topOfHeader + heightOfHeader - 68) && down == 1) {
       //scroll up to welcome header
-      //newScrollTop = 0;
-      //alert('bye');
       $root.animate({scrollTop: 0}, 1000);
-//    } else if ($(window).scrollTop() > (topOfHeader + heightOfHeader - 66)) { 
-//      //act like a normal website
-//      //alert('ayyyy');
-//      newScrollTop = $(window).scrollTop();
-//      $root.css({scrollTop: $(window).scrollTop()});
     }
     prevScrollTop = newScrollTop;
 
     if ($(window).scrollTop() >= topOfHeader + heightOfHeader - 67) {
-      down = 1;
+      down = 1; //We're "down"
     } else if ($(window).scrollTop() == 0) {
-      down = 0;
+      down = 0; //We're "up"
     } else {
-      down = 2;
+      down = 2; //We're "in between"
     }
+  });
 
+  $('.btn-hdr').on('click', function() {
+    $root.animate({scrollTop: topOfHeader + heightOfHeader - 67}, 1000);    
+  });
+
+  $('.down-arrow').on('click', function() {
+    $root.animate({scrollTop: topOfHeader + heightOfHeader - 67}, 1000);    
   });
 });

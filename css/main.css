@@ -138,8 +138,14 @@ h4 {
   display: inline;
 }
 
-.btn-lg {
+.btn, .btn:hover, .btn:focus {
   background: transparent;
-  color: white;
   text-shadow: none;
+  border-color: black;
 }
+
+.btn-lg, .btn-lg:hover, .btn-lg:focus {
+  color: white;
+  border-color: white;
+}
+
