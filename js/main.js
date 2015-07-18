@@ -10,7 +10,7 @@ $(document).ready(function() {
   prevScrollTop = $(window).scrollTop();
   var $root = $('html, body');
   $root.animate({scrollTop: 0}, 0);
-  var down = 0;
+  var down = 2;
 
   $(window).on('scroll', function() {
     if ($(window).scrollTop() > (topOfHeader + heightOfHeader - 68)) {
@@ -20,27 +20,31 @@ $(document).ready(function() {
     }
 
     var newScrollTop = $(window).scrollTop();
-    if ($(window).scrollTop() < (topOfHeader + heightOfHeader - 68) && $(window).scrollTop() > 0 && newScrollTop > prevScrollTop) {
+    if ($(window).scrollTop() < (topOfHeader + heightOfHeader - 68) && down == 0) {
       //scroll down to secondary header
       //newScrollTop = topOfHeader + heightOfHeader - 67;
       //alert('hi');
       $root.animate({scrollTop: topOfHeader + heightOfHeader - 67}, 1000);
-    } else if ($(window).scrollTop() < (topOfHeader + heightOfHeader - 68) && $(window).scrollTop() > 0 && newScrollTop < prevScrollTop) {
+    } else if ($(window).scrollTop() < (topOfHeader + heightOfHeader - 68) && down == 1) {
       //scroll up to welcome header
       //newScrollTop = 0;
       //alert('bye');
       $root.animate({scrollTop: 0}, 1000);
-
-    } else if ($(window).scrollTop() > (topOfHeader + heightOfHeader - 66)) { 
-      //act like a normal website
-      //alert('ayyyy');
-      newScrollTop = $(window).scrollTop();
-      $root.css({scrollTop: $(window).scrollTop()});
+//    } else if ($(window).scrollTop() > (topOfHeader + heightOfHeader - 66)) { 
+//      //act like a normal website
+//      //alert('ayyyy');
+//      newScrollTop = $(window).scrollTop();
+//      $root.css({scrollTop: $(window).scrollTop()});
     }
     prevScrollTop = newScrollTop;
-  });
 
-  $('.btn').on('click', function() {
-    alert(newScrollTop);
+    if ($(window).scrollTop() >= topOfHeader + heightOfHeader - 67) {
+      down = 1;
+    } else if ($(window).scrollTop() == 0) {
+      down = 0;
+    } else {
+      down = 2;
+    }
+
   });
 });
