@@ -50,4 +50,8 @@ $(document).ready(function() {
   $('.dropdown-toggle').on('mouseenter', function() {
     $(this).next().slideDown();
   });
+
+  $('.dropdown').on('mouseleave', function() {
+    $(this).find('.dropdown-menu').slideUp();
+  });
 });
