@@ -47,6 +47,11 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  background-color: transparent;
+}
+
 .dropdown > a.dropdown-toggle:hover,
 .dropdown > a.dropdown-toggle:focus {
   background-color: transparent;

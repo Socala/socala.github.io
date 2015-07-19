@@ -17,10 +17,10 @@ $(document).ready(function() {
   $(window).on('scroll', function() {
     if ($(window).scrollTop() > (topOfHeader + heightOfHeader - 68)) {
       $('.navbar').css('background', 'rgba(153, 0, 0 ,1)');
-      $('.dropdown-menu').css('margin-top', '14px');
+    $('.dropdown-menu').css('margin-top', '14px');
     } else {
       $('.navbar').css('background', 'rgba(153, 0, 0 ,0)');
-      $('.dropdown-menu').css('margin-top', '-5px');
+    $('.dropdown-menu').css('margin-top', '-5px');
     }
 
     var newScrollTop = $(window).scrollTop();
