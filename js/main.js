@@ -46,4 +46,8 @@ $(document).ready(function() {
   $('.down-arrow').on('click', function() {
     $root.animate({scrollTop: topOfHeader + heightOfHeader - 67}, 1000);    
   });
+
+  $('.dropdown-toggle').on('mouseenter', function() {
+    $(this).next().slideDown();
+  });
 });
