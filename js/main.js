@@ -1,7 +1,8 @@
 $(document).ready(function() {
-  var topOfHeader = $('#header').offset().top;
-  var heightOfHeader = $('#header').outerHeight();
-  if ($(window).scrollTop() > (topOfHeader + heightOfHeader - 68)) {
+  var height = $(window).height();
+  $('.special').css('height', height);
+
+  if ($(window).scrollTop() > (height - 70)) {
     $('.navbar').css('background', 'rgba(153, 0, 0 ,1)');
     $('.dropdown-menu').css('margin-top', '14px');
   } else {
@@ -9,34 +10,55 @@ $(document).ready(function() {
     $('.dropdown-menu').css('margin-top', '-5px');
   }
 
-  var height = $(window).height();
-  $('.special').css('height', height);
-
   var $root = $('html, body');
   $root.animate({scrollTop: 0}, 0);
   var down = 0;
 
-  $(window).on('scroll', function() {
-    var topOfHeader = $('#header').offset().top;
-    var heightOfHeader = $('#header').outerHeight();
+  (function($,sr){
+    // debouncing function from John Hann
+    // http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
+    var debounce = function (func, threshold, execAsap) {
+      var timeout;
 
-    if ($(window).scrollTop() > (topOfHeader + heightOfHeader - 68)) {
+      return function debounced () {
+          var obj = this, args = arguments;
+          function delayed () {
+              if (!execAsap)
+                  func.apply(obj, args);
+              timeout = null;
+          };
+
+          if (timeout)
+              clearTimeout(timeout);
+          else if (execAsap)
+              func.apply(obj, args);
+
+          timeout = setTimeout(delayed, threshold || 100);
+      };
+    }
+    // smartresize 
+    jQuery.fn[sr] = function(fn){  return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
+
+  })(jQuery,'smartresize');
+
+  $(window).on('scroll', function() {
+    if ($(window).scrollTop() >= (height - 70)) {
       $('.navbar').css('background', 'rgba(153, 0, 0 ,1)');
     } else {
       $('.navbar').css('background', 'rgba(153, 0, 0 ,0)');
     }
 
-    if ($(window).scrollTop() < (topOfHeader + heightOfHeader - 68) && down == 0) {
+    if ($(window).scrollTop() < (height - 70) && down == 0) {
       //scroll down to secondary header
-      $root.animate({scrollTop: topOfHeader + heightOfHeader - 67}, {queue: false, duration: 1000});
+      $root.animate({scrollTop: height - 70}, {queue: false, duration: 1000});
       $('.dropdown-menu').css('margin-top', '14px');
-    } else if ($(window).scrollTop() < (topOfHeader + heightOfHeader - 68) && down == 1) {
+    } else if ($(window).scrollTop() < (height - 70) && down == 1) {
       //scroll up to welcome header
       $root.animate({scrollTop: 0}, {queue: false, duration: 1000});
       $('.dropdown-menu').css('margin-top', '-5px');
     }
 
-    if ($(window).scrollTop() >= topOfHeader + heightOfHeader - 67) {
+    if ($(window).scrollTop() >= height - 70) {
       down = 1; //We're "down"
     } else if ($(window).scrollTop() == 0) {
       down = 0; //We're "up"
@@ -46,11 +68,11 @@ $(document).ready(function() {
   });
 
   $('.btn-hdr').on('click', function() {
-    $root.animate({scrollTop: topOfHeader + heightOfHeader - 67}, 1000);    
+    $root.animate({scrollTop: height - 70}, 1000);    
   });
 
   $('.down-arrow').on('click', function() {
-    $root.animate({scrollTop: topOfHeader + heightOfHeader - 67}, 1000);    
+    $root.animate({scrollTop: height - 70}, 1000);    
   });
 
   $('.dropdown-toggle').on('mouseenter', function() {
@@ -61,4 +83,11 @@ $(document).ready(function() {
     $(this).find('.dropdown-menu').delay(500);
     $(this).find('.dropdown-menu').slideUp();
   });
+
+  $(window).smartresize(function(){
+    height = $(window).height();
+    $('.special').css('height', height);    
+  });
+
+
 });
