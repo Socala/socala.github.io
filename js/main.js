@@ -75,13 +75,17 @@ $(document).ready(function() {
     $root.animate({scrollTop: height - 70}, 1000);    
   });
 
-  $('.dropdown-toggle').on('mouseenter', function() {
-    $(this).next().slideDown();
+  $('.dropdown').on('mouseenter', function() {
+    $(this).find('.dropdown-menu').slideDown();
+    clearTimeout($(this).data('timeoutId'));
   });
 
   $('.dropdown').on('mouseleave', function() {
-    $(this).find('.dropdown-menu').delay(500);
-    $(this).find('.dropdown-menu').slideUp();
+    var someElement = $(this);
+    var timeoutId = setTimeout(function() {
+      someElement.find('.dropdown-menu').slideUp();
+    }, 500);
+    someElement.data('timeoutId', timeoutId);
   });
 
   $(window).smartresize(function(){
