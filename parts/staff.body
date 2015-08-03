@@ -1,0 +1,31 @@
+    <div class="jumbotron lowertitle center nothomepage">
+      <div class="container">
+        <h1>Staff</h1>
+        <p>The Bama Wesley staff are passionate about college students and helping them impact the world for Christ.</p>
+      </div>
+    </div>
+
+    <div class="container center">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="img/wade.png">
+          <h2>Wade Langer</h2>
+          <h4>Campus Pastor</h4>
+          <p>Wade is the founding pastor of The Capstone United Methodist Church. He grew up in Trussville, Alabama and felt a call to ministry in his teenage years. He earned a B.A. degree in Religion from Birmingham-Southern College in 2006, and a Master of Divinity Degree from Candler School of Theology at Emory University in 2009. Before being appointed to start The Capstone UMC, Wade was a youth pastor for five years, and an Associate Minister at First United Methodist Church of Trussville for four years, where he served as the primary pastor for contemporary worship and student ministries.</p>
+          <p><a class="btn btn-default" href="#" role="button">Contact &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <img src="img/greer.png">
+          <h2>Greer Fawley</h2>
+          <h4>Director of Community Formation</h4>
+          <p>Greer graduated from the University of Alabama in 2013 with a B.S. in Biology. Immediately following graduation, Greer accepted an internship at Bama Wesley, then became a director in March 2014. She leads all of the female discipleship huddles and mentors the leaders of FIRST Step, a program supporting students in recovery from substance abuse. Greer loves going to concerts, hiking outdoors and spending time with her pup, Waylon. </p>
+          <p><a class="btn btn-default" href="#" role="button">Contact &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <img src="img/jay.jpg">
+          <h2>Jay Windham</h2>
+          <h4>Director of Outreach</h4>
+          <p>Jay graduated from Mississippi State University in 2010 with a B.A. in History and immediately jumped into a Master’s degree program. After spending three years teaching high school in north Mississippi, Jay, along with his wife, Kelsey, moved to Tuscaloosa and joined the staff at Bama Wesley. Kelsey is a graduate student at the University of Alabama and is pursuing her MFA. They have an adorable boxer named Ida Belle. In his free time, Jay enjoys woodworking, gardening, and fishing.</p>
+          <p><a class="btn btn-default" href="#" role="button">Contact &raquo;</a></p>
+        </div>
+      </div>
