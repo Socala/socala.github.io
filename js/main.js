@@ -21,10 +21,10 @@ $(document).ready(function() {
   $('.special').css('height', height);
 
   if ($(window).scrollTop() > (height - 70)) {
-    $('.navbar').css('background', 'rgba(153, 0, 0 ,1)');
+    $('.navbar').css('background', 'rgba(0, 25, 51, 1)');
     $('.dropdown-menu').css('margin-top', '14px');
   } else {
-    $('.navbar').css('background', 'rgba(153, 0, 0 ,0)');
+    $('.navbar').css('background', 'rgba(0, 25, 51, 0)');
     $('.dropdown-menu').css('margin-top', '-5px');
   }
 
@@ -61,9 +61,9 @@ $(document).ready(function() {
 
   $(window).on('scroll', function() {
     if ($(window).scrollTop() >= (height - 70)) {
-      $('.navbar').css('background', 'rgba(153, 0, 0 ,1)');
+      $('.navbar').css('background', 'rgba(0, 25, 51, 1)');
     } else {
-      $('.navbar').css('background', 'rgba(153, 0, 0 ,0)');
+      $('.navbar').css('background', 'rgba(0, 25, 51, 0)');
     }
 
     if ($(window).scrollTop() < (height - 70) && down == 0) {

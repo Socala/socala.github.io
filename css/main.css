@@ -1,5 +1,5 @@
 .navbar {
-  background: rgba(153, 0, 0, 1);
+  background: rgba(0, 25, 51, 1);
   border-bottom: 0;
 }
 
@@ -90,15 +90,15 @@ p {
 }
 
 .jumbotron {
-  background-image: url("../img/background.png");
+  background-image: url("../img/towerdark.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .jumbotron.lowertitle {
-  background-image: url("../img/sunset_STILLDONTUSE.jpg");  
-  color: #fff;
+  background-image: url("../img/meeting.jpg");  
+  color: #001933;
   min-height: 320px;
   height: 45%;
   margin-top: 50px;
@@ -136,7 +136,7 @@ h4 {
 }
 
 #brandimg {
-  width: 30%;
+  width: 75%;
   //margin-top: 25px;
   display: inline;
   margin-left: 20px;
