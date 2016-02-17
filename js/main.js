@@ -15,7 +15,7 @@ $(document).ready(function() {
   var url = window.location.href;
   var filename = url.substring(url.lastIndexOf('/')+1);
 
-  if (filename == "index.html") {
+  if (filename == "index.html" || filename == "") {
 
   var height = $(window).height();
   $('.special').css('height', height);
