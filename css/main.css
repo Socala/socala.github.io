@@ -78,6 +78,10 @@ p {
   font-size: 1.5em;
 }
 
+.deliv {
+  text-align: left;
+}
+
 .row-divider {
   height: 50px;
 }
