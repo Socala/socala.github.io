@@ -74,11 +74,11 @@ p {
   font-family: 'Montserrat', sans-serif;
 }
 
-.mission {
-  font-size: 1.5em;
+p.bodytext {
+  font-size: 1.25em;
 }
 
-.deliv {
+.bodytext {
   text-align: left;
 }
 
