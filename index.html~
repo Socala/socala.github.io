@@ -78,6 +78,8 @@
         <div class="col-md-12">
           <h2 class="bodytext">Find common times with friends easily</h2>
           <p class="bodytext">Socala will allow you to share your schedule with friends so they know when you're available. For privacy, you will be able to choose to list an event simply as a blank period of busy time, and you will always be in control of who you share with. When creating an event, you will be able to list people who you wish to invite as well as the time ranges for the event (for example, "7-10 PM on Wednesdays or 6-9 PM on Thursdays"). Socala will then display the best available times for the event.</p>
+          <h2 class="bodytext">Simplify the process of finding events</h2>
+          <p class="bodytext">Socala will enable you to discover events being hosted by your friends, as well as publicly broadcasted events in your area that relate to your interests. In addition, you will be able to rate past events, which will help Socala decide which events to show you and other users.</p>
           <h2 class="bodytext">Synchronize with users' existing Google Calendar</h2>
           <p class="bodytext">Socala will not require you to start from scratch. Instead it will synchronize with Google Calendar, which many people use every day.</p>
 	</div>

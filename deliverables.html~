@@ -6,7 +6,7 @@
   <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Socala</title>
+      <title>Socala | Deliverables</title>
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -52,45 +52,49 @@
         </div>
       </nav>
 
-    <div class="jumbotron special" id="header">
-      <div class="container maintitle">
-        <h1>Collaborate Effortlessly</h1>
-        <p>With Socala, you never need to wonder if you're scheduling an event at the right time.</p>
-        <p><a class="btn btn-default btn-lg btn-hdr" href="#" role="button">Learn more &raquo;</a></p>
-      </div>
-
-    </div>
-
-    <div class="down-arrow"><img src="img/down.png"></div>
-
-    <div class="jumbotron lowertitle center">
+    <div class="jumbotron lowertitle center nothomepage">
       <div class="container">
-        <h1>What can Socala do for you?</h1>
-        <p>Schedule events when your friends are free, discover events near you, and let people know when you're busy.</p>
+        <h1>Deliverables</h1>
+        <p>These are the documents submitted by the Socala team for our Senior Capstone course, CS 495.</p>
       </div>
     </div>
 
     <div class="container center">
       <div class="row">
         <div class="page-header">
-          <h1>Project Goals</h1>
+          <h1>Requirements</h1>
         </div>
         <div class="col-md-12">
-          <h2 class="bodytext">Find common times with friends easily</h2>
-          <p class="bodytext">Socala will allow you to share your schedule with friends so they know when you're available. For privacy, you will be able to choose to list an event simply as a blank period of busy time, and you will always be in control of who you share with. When creating an event, you will be able to list people who you wish to invite as well as the time ranges for the event (for example, "7-10 PM on Wednesdays or 6-9 PM on Thursdays"). Socala will then display the best available times for the event.</p>
-          <h2 class="bodytext">Synchronize with users' existing Google Calendar</h2>
-          <p class="bodytext">Socala will not require you to start from scratch. Instead it will synchronize with Google Calendar, which many people use every day.</p>
-	</div>
-	<div class="page-header">
-	  <h1>Discover Socala</h1>
-	</div>
-	<div class="col-md-12">
-	  <iframe width="560" height="315" src="https://www.youtube.com/embed/8NMZ7QJPwAI" frameborder="0" allowfullscreen></iframe>
-	</div>
+          <h2 class="bodytext">Software Requirements Document</h2>
+          <p class="bodytext">The <a href="srd.pdf">Software Requirements Document</a> is a statement of what the Socala software will be required to do.</p>
+          <h2 class="bodytext">Software Requirements Presentation</h2>
+          <p class="bodytext">The <a href="srp.pdf">Software Requirements Presentation</a> is a visual aid for our discussion of the Socala software requirements.</p>
+        </div>
       </div>
-
-      <div class="row row-divider"></div>
-
+      <div class="row">
+        <div class="page-header">
+	  <h1>Design</h1>
+        </div>
+        <div class="col-md-12">
+          <h2 class="bodytext">Software Design Document</h2>
+          <p class="bodytext">The <a href="sdd.pdf">Software Design Document</a> is a statement of how the Socala app will be designed to meet its requirements.</p>
+          <h2 class="bodytext">Software Design Presentation</h2>
+          <p class="bodytext">The <a href="sdp.pdf">Software Design Presentation</a> is a visual aid for our discussion of the Socala software design.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="page-header">
+	  <h1>Implementation</h1>
+        </div>
+        <div class="col-md-12">
+          <h2 class="bodytext">Frontend Source Code and APK</h2>
+          <p class="bodytext">This <a href="https://github.com/Socala/app">GitHub repository</a> contains the source code of our Android app.</p>
+          <h2 class="bodytext">Backend Source Code</h2>
+          <p class="bodytext">This <a href="https://github.com/Socala/backend">GitHub repository</a> contains the source code of our backend.</p>
+          <h2 class="bodytext">Software Implementation Presentation</h2>
+          <p class="bodytext">The <a href="sip.pdf">Software Implementation Presentation</a> is a visual aid for our discussion of the Socala software implementation.</p>
+        </div>
+      </div>
       <hr>
 
       <footer>
